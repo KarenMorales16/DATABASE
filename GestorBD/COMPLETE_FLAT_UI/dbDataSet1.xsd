@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbDataSet1" targetNamespace="http://tempuri.org/dbDataSet1.xsd" xmlns:mstns="http://tempuri.org/dbDataSet1.xsd" xmlns="http://tempuri.org/dbDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.COMPLETE_FLAT_UI.Properties.Settings.GlobalReference.Default.dbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clientesTableAdapter" GeneratorDataComponentClassName="clientesTableAdapter" Name="clientes" UserDataComponentName="clientesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (Settings)" DbObjectName="db.clientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_cli`, `nombre` FROM `clientes`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tiendasTableAdapter" GeneratorDataComponentClassName="tiendasTableAdapter" Name="tiendas" UserDataComponentName="tiendasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (Settings)" DbObjectName="db.tiendas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_tie`, `nombre`, `fk_id_cli` FROM `tiendas`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tiendas1TableAdapter" GeneratorDataComponentClassName="tiendas1TableAdapter" Name="tiendas1" UserDataComponentName="tiendas1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (Settings)" DbObjectName="db.tiendas1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_tie`, `nombre`, `fk_id_cli` FROM `tiendas1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tiendas2TableAdapter" GeneratorDataComponentClassName="tiendas2TableAdapter" Name="tiendas2" UserDataComponentName="tiendas2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbConnectionString (Settings)" DbObjectName="db.tiendas2" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_tie`, `nombre` FROM `tiendas2`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbDataSet1" msprop:Generator_UserDSName="dbDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clientes" msprop:Generator_TableClassName="clientesDataTable" msprop:Generator_TableVarName="tableclientes" msprop:Generator_TablePropName="clientes" msprop:Generator_RowDeletingName="clientesRowDeleting" msprop:Generator_RowChangingName="clientesRowChanging" msprop:Generator_RowEvHandlerName="clientesRowChangeEventHandler" msprop:Generator_RowDeletedName="clientesRowDeleted" msprop:Generator_UserTableName="clientes" msprop:Generator_RowChangedName="clientesRowChanged" msprop:Generator_RowEvArgName="clientesRowChangeEvent" msprop:Generator_RowClassName="clientesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tiendas" msprop:Generator_TableClassName="tiendasDataTable" msprop:Generator_TableVarName="tabletiendas" msprop:Generator_TablePropName="tiendas" msprop:Generator_RowDeletingName="tiendasRowDeleting" msprop:Generator_RowChangingName="tiendasRowChanging" msprop:Generator_RowEvHandlerName="tiendasRowChangeEventHandler" msprop:Generator_RowDeletedName="tiendasRowDeleted" msprop:Generator_UserTableName="tiendas" msprop:Generator_RowChangedName="tiendasRowChanged" msprop:Generator_RowEvArgName="tiendasRowChangeEvent" msprop:Generator_RowClassName="tiendasRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tiendas1" msprop:Generator_TableClassName="tiendas1DataTable" msprop:Generator_TableVarName="tabletiendas1" msprop:Generator_TablePropName="tiendas1" msprop:Generator_RowDeletingName="tiendas1RowDeleting" msprop:Generator_RowChangingName="tiendas1RowChanging" msprop:Generator_RowEvHandlerName="tiendas1RowChangeEventHandler" msprop:Generator_RowDeletedName="tiendas1RowDeleted" msprop:Generator_UserTableName="tiendas1" msprop:Generator_RowChangedName="tiendas1RowChanged" msprop:Generator_RowEvArgName="tiendas1RowChangeEvent" msprop:Generator_RowClassName="tiendas1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tiendas2" msprop:Generator_TableClassName="tiendas2DataTable" msprop:Generator_TableVarName="tabletiendas2" msprop:Generator_TablePropName="tiendas2" msprop:Generator_RowDeletingName="tiendas2RowDeleting" msprop:Generator_RowChangingName="tiendas2RowChanging" msprop:Generator_RowEvHandlerName="tiendas2RowChangeEventHandler" msprop:Generator_RowDeletedName="tiendas2RowDeleted" msprop:Generator_UserTableName="tiendas2" msprop:Generator_RowChangedName="tiendas2RowChanged" msprop:Generator_RowEvArgName="tiendas2RowChangeEvent" msprop:Generator_RowClassName="tiendas2Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
